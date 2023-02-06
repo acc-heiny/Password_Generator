@@ -11,7 +11,7 @@
 		F3007F532968C42500D25E4A /* SecurityTipTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3007F522968C42500D25E4A /* SecurityTipTableViewController.swift */; };
 		F3007F55296DCD3F00D25E4A /* SecurityTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3007F54296DCD3F00D25E4A /* SecurityTipTableViewCell.swift */; };
 		F3007F5A296DF4F200D25E4A /* SecurityTipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */; };
-		F3007F5D296F085100D25E4A /* DicasSenha.json in Resources */ = {isa = PBXBuildFile; fileRef = F3007F5C296F085100D25E4A /* DicasSenha.json */; };
+		F33ED9D3299179110061E368 /* DicasSenha.json in Resources */ = {isa = PBXBuildFile; fileRef = F33ED9D2299179110061E368 /* DicasSenha.json */; };
 		F36FF1D9296366FB001E67F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1D8296366FB001E67F8 /* AppDelegate.swift */; };
 		F36FF1DB296366FB001E67F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */; };
 		F36FF1DD296366FB001E67F8 /* PasswordGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1DC296366FB001E67F8 /* PasswordGeneratorViewController.swift */; };
@@ -25,7 +25,7 @@
 		F3007F522968C42500D25E4A /* SecurityTipTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipTableViewController.swift; sourceTree = "<group>"; };
 		F3007F54296DCD3F00D25E4A /* SecurityTipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipTableViewCell.swift; sourceTree = "<group>"; };
 		F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipModel.swift; sourceTree = "<group>"; };
-		F3007F5C296F085100D25E4A /* DicasSenha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = DicasSenha.json; path = ../../../../Downloads/DicasSenha.json; sourceTree = "<group>"; };
+		F33ED9D2299179110061E368 /* DicasSenha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DicasSenha.json; sourceTree = "<group>"; };
 		F36FF1D5296366FB001E67F8 /* PasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36FF1D8296366FB001E67F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -75,6 +75,7 @@
 		F3007F58296DF48C00D25E4A /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F33ED9D2299179110061E368 /* DicasSenha.json */,
 				F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */,
 			);
 			path = Model;
@@ -118,7 +119,6 @@
 			isa = PBXGroup;
 			children = (
 				F3007F5E296F089000D25E4A /* View */,
-				F3007F5C296F085100D25E4A /* DicasSenha.json */,
 				F3007F5B296F06DD00D25E4A /* Controller */,
 				F3007F58296DF48C00D25E4A /* Model */,
 				F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */,
@@ -188,9 +188,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3007F5D296F085100D25E4A /* DicasSenha.json in Resources */,
 				F36FF1E5296366FC001E67F8 /* LaunchScreen.storyboard in Resources */,
 				F36FF1E2296366FC001E67F8 /* Assets.xcassets in Resources */,
+				F33ED9D3299179110061E368 /* DicasSenha.json in Resources */,
 				F36FF1E0296366FB001E67F8 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
