@@ -118,9 +118,9 @@
 		F36FF1D7296366FB001E67F8 /* PasswordGenerator */ = {
 			isa = PBXGroup;
 			children = (
+				F3007F58296DF48C00D25E4A /* Model */,
 				F3007F5E296F089000D25E4A /* View */,
 				F3007F5B296F06DD00D25E4A /* Controller */,
-				F3007F58296DF48C00D25E4A /* Model */,
 				F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */,
 				F36FF1D8296366FB001E67F8 /* AppDelegate.swift */,
 				F36FF1E1296366FC001E67F8 /* Assets.xcassets */,
