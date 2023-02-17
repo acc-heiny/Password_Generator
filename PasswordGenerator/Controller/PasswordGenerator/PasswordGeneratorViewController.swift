@@ -11,14 +11,15 @@ import UIKit
 class PasswordGeneratorViewController: UIViewController {
     
     private var passwordListResult: [String] = []
-    
+    private var rulesModel: RulesModel = RulesModel()
+    private var randomPasswordModel: RandomPasswordGeneratorModel = RandomPasswordGeneratorModel()
     @IBOutlet weak var numberPasswordTextField: UITextField!
     @IBOutlet weak var numberCharacterTextField: UITextField!
     @IBOutlet weak var useNumberSwitch: UISwitch!
     @IBOutlet weak var capitalLetterSwitch: UISwitch!
     @IBOutlet weak var smallLetterSwitch: UISwitch!
     @IBOutlet weak var specialCharactersSwitch: UISwitch!
-    // prepare for segue: responsavel por passar as informaçoes de uma viewcontroller para outra.
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "generatePassword",
            let viewController: TotalPasswordViewController = segue.destination as? TotalPasswordViewController {
@@ -29,23 +30,10 @@ class PasswordGeneratorViewController: UIViewController {
     }
     
     @IBAction func generatePasswordButton(_ sender: Any) {
-        passwordListResult = []
         passwordListResult = verifyRulesAndGeneratePasswords()
     }
     
-    private func generateRandomPassword(with length: Int, using characters: String) -> String {
-        var passWord: String = String()
-        for _ in 0 ..< length {
-            if let randomCharacter: Character = characters.randomElement() {
-                passWord.append(randomCharacter)
-            }
-        }
-        return passWord
-        
-    }
     private func verifyRulesAndGeneratePasswords() -> [String] {
-        var passwordList: [String] = []
-        var characters: String = String()
         var numberOfCharacters: Int = 16
         var numberOfPasswords: Int = 8
         
@@ -58,38 +46,34 @@ class PasswordGeneratorViewController: UIViewController {
            let numberOfPasswordsTyped: Int = Int(numberOfPasswordsText) {
             numberOfPasswords = numberOfPasswordsTyped
         }
+        return verifyAndAddRules(numberOfCharacters: numberOfCharacters, numberOfPasswords: numberOfPasswords)
+    }
+    
+    private func verifyAndAddRules(numberOfCharacters: Int, numberOfPasswords: Int) -> [String] {
         
         if smallLetterSwitch.isOn {
-            let smallLetters: String = "abcdefghijklmnopqrstuvwxyz"
-            characters.append(smallLetters)
+            rulesModel.appliedCharactersSet.append(rulesModel.smallLetters)
         }
         
         if useNumberSwitch.isOn {
-            let useNumbers: String = "01234567890123456789"
-            characters.append(useNumbers)
+            rulesModel.appliedCharactersSet.append(rulesModel.useNumber)
         }
         
         if capitalLetterSwitch.isOn {
-            let capitalLetters: String = "ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-            characters.append(capitalLetters)
+            rulesModel.appliedCharactersSet.append(rulesModel.capitalLetters)
         }
         
         if specialCharactersSwitch.isOn {
-            let specialCharacters: String = "!@#$%&()!@#$%&()"
-            characters.append(specialCharacters)
+            rulesModel.appliedCharactersSet.append(rulesModel.specialCharacters)
         }
         
-        for _ in 0 ..< numberOfPasswords {
-            passwordList.append(generateRandomPassword(with: numberOfCharacters, using: characters))
-        }
-        return passwordList
+        return randomPasswordModel.generateMultiplePasswords(characters: rulesModel.appliedCharactersSet, numberOfCharacters:numberOfCharacters, numberOfPasswords: numberOfPasswords)
     }
-    
 }
 
 extension PasswordGeneratorViewController: TotalPasswordViewControllerDelegate {
-
-    func generateAgain() -> [String] { 
+    
+    func generateAgain() -> [String] {
         return verifyRulesAndGeneratePasswords()
     }
     

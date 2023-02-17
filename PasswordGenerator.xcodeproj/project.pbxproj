@@ -12,6 +12,7 @@
 		F3007F55296DCD3F00D25E4A /* SecurityTipTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3007F54296DCD3F00D25E4A /* SecurityTipTableViewCell.swift */; };
 		F3007F5A296DF4F200D25E4A /* SecurityTipModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */; };
 		F33ED9D3299179110061E368 /* DicasSenha.json in Resources */ = {isa = PBXBuildFile; fileRef = F33ED9D2299179110061E368 /* DicasSenha.json */; };
+		F33ED9D9299ACE690061E368 /* GeneratePasswordModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33ED9D8299ACE690061E368 /* GeneratePasswordModel.swift */; };
 		F36FF1D9296366FB001E67F8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1D8296366FB001E67F8 /* AppDelegate.swift */; };
 		F36FF1DB296366FB001E67F8 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */; };
 		F36FF1DD296366FB001E67F8 /* PasswordGeneratorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F36FF1DC296366FB001E67F8 /* PasswordGeneratorViewController.swift */; };
@@ -26,6 +27,7 @@
 		F3007F54296DCD3F00D25E4A /* SecurityTipTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipTableViewCell.swift; sourceTree = "<group>"; };
 		F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecurityTipModel.swift; sourceTree = "<group>"; };
 		F33ED9D2299179110061E368 /* DicasSenha.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = DicasSenha.json; sourceTree = "<group>"; };
+		F33ED9D8299ACE690061E368 /* GeneratePasswordModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneratePasswordModel.swift; sourceTree = "<group>"; };
 		F36FF1D5296366FB001E67F8 /* PasswordGenerator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PasswordGenerator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F36FF1D8296366FB001E67F8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F36FF1DA296366FB001E67F8 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -77,6 +79,7 @@
 			children = (
 				F33ED9D2299179110061E368 /* DicasSenha.json */,
 				F3007F59296DF4F200D25E4A /* SecurityTipModel.swift */,
+				F33ED9D8299ACE690061E368 /* GeneratePasswordModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 				F3007F532968C42500D25E4A /* SecurityTipTableViewController.swift in Sources */,
 				F3007F4C2968870700D25E4A /* TotalPasswordViewController.swift in Sources */,
 				F36FF1DB296366FB001E67F8 /* SceneDelegate.swift in Sources */,
+				F33ED9D9299ACE690061E368 /* GeneratePasswordModel.swift in Sources */,
 				F3007F5A296DF4F200D25E4A /* SecurityTipModel.swift in Sources */,
 				F3007F55296DCD3F00D25E4A /* SecurityTipTableViewCell.swift in Sources */,
 			);

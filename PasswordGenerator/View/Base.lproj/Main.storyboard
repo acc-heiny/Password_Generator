@@ -280,7 +280,7 @@
                                 <color key="baseForegroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </buttonConfiguration>
                             <connections>
-                                <action selector="closeButton:" destination="aV4-ml-pov" eventType="touchUpInside" id="zfp-LA-Awd"/>
+                                <action selector="closeButton:" destination="aV4-ml-pov" eventType="touchUpInside" id="qd3-6E-eE1"/>
                             </connections>
                         </button>
                         <prototypes>
