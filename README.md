@@ -9,6 +9,7 @@ Second Challenge
 - Storyboard version
 - MVC architecture
 
+A change was made to the code so that the files would be organized according to the MVC architecture, leaving in the ViewController only what it is responsible for.
 
 
 ## Demo
